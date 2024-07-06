@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'JurassicPark';
+  src: url('./JurassicPark.ttf') format('truetype');
+}
+
+.splash-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'JurassicPark', sans-serif;
+  font-size: 10vw; /* Use viewport width for responsive font size */
+  color: white;
+}
+
+.logo-container {
+  margin: 20px 0;
+}
+
+.anchor-logo {
+  width: 40vw; /* Use viewport width for responsive size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.button-container {
+  margin: 15px 0;
+}
+
+.enter-button {
+  font-family: 'JurassicPark', sans-serif;
+  font-size: 3vw; /* Use viewport width for responsive font size */
+  padding: 1em 2em;
+  color: black;
+  background: white;
+  border: 2px solid black;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.enter-button:hover {
+  background: black;
+  color: white;
+}
+
+.quote {
+  margin-top: 20px;
+  font-size: 3vw; /* Use viewport width for responsive font size */
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+}
+
+/* Media query for small devices (phones) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 12vw;
+  }
+
+  .anchor-logo {
+    width: 40vw;
+  }
+
+  .enter-button {
+    font-size: 8vw;
+    padding: 1.5em 3em;
+  }
+
+  .quote {
+    font-size: 6vw;
+  }
+}
